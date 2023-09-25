@@ -8,6 +8,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
     <h1 id="fr">Test Css</h1>
-
+     <button class="btn btn-primary">
+			 Notification <span class="badge badge-primary"></span>
+	 </button>
 </body>
 </html>
