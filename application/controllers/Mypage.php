@@ -5,7 +5,8 @@ class Mypage extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('mypage_view');
+		$this->load->view('mycss');
+		$this->load->view('mypage_view2');
 	}
 
 	
