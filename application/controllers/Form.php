@@ -9,8 +9,15 @@ class Form extends CI_Controller {
 
     public function showform()
 	{
+        $data = array(
+            'name'=> $this->input->post('name'),
+            'lname' => $this->input->post('lname')
+        );
+        $this->load->view('form_view',$data);
+        /*
         echo '<pre>';
         print_r($_POST);
         echo '</pre>';
+        */
 	}
 }
