@@ -11,5 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<a href="<?php echo site_url('hello');?>">Link to hello</a> <br>
 	<a href="<?php echo site_url('welcome');?>">Link to wellcome</a> <br>
 	<a href="<?php echo site_url('hello/index2');?>">Link to hello fn</a>
+	<br>
+	<img src="<?php echo base_url('img');?>/1.png" alt="">
 </body>
 </html>
