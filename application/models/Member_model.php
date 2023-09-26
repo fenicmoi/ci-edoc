@@ -23,4 +23,10 @@ class Member_model extends CI_Model {
  
     }
 
+    public function showdata()
+        {
+                $query = $this->db->get('tbl_mamber');
+                return $query->result();
+        }
+
 }
