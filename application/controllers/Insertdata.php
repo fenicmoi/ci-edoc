@@ -2,6 +2,13 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Insertdata extends CI_Controller {
+
+    public function __construct()
+    {
+            parent::__construct();
+            $this->load->model('member_model');
+    }
+
 	public function index()
 	{
         $this->load->view('css');
@@ -15,27 +22,7 @@ class Insertdata extends CI_Controller {
 
     public function adding()
 	{
-         /*
-        echo '<pre>';
-        print_r($_POST);
-        echo '</pre>';
-        */
-
-
-        $data = array(
-            'm_name'=> $this->input->post('m_name'),
-            'l_name' => $this->input->post('l_name')
-        );
-        
-       $query = $this->db->insert('tbl_mamber',$data);
-       
-
-       if ($query) {
-        echo 'addok';
-       }else{
-        echo 'no ok';
-        }
-
+       $this->member_model->addmember();
 	
     }
 }
