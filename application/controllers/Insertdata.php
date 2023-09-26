@@ -24,6 +24,7 @@ class Insertdata extends CI_Controller {
 		$this->load->view('banner');
 		$this->load->view('navbar');
 		$this->load->view('insert_view');
+        $this->load->view('member_view', $data);
 		$this->load->view('footer');
         $this->load->view('js');
 	}
