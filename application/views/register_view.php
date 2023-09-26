@@ -55,6 +55,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <input type="text" name="username" class="form-control" required>
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2 control-label">Password</div>
+                        <div class="col-sm-5">
+                            <input type="password" name="password" class="form-control" required>
+                        </div>
+                    </div>
                   
                     <div class="form-group row">
                         <div class="col-sm-2 control-label">name</div>
@@ -80,12 +86,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <input type="phone" name="phone" class="form-control" required>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-2 control-label">Password</div>
-                        <div class="col-sm-5">
-                            <input type="password" name="password" class="form-control" required>
-                        </div>
-                    </div>
+                  
 
                     <div class="form-group row">
                         <div class="col-sm-2 control-label"></div>
