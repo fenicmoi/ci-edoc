@@ -17,4 +17,20 @@ class Register extends CI_Controller {
 	  echo '</pre>';
 
 	}
+
+	public function login()
+	{
+		$this->load->view('css');
+		$this->load->view('login_view');
+        $this->load->view('js');
+
+	}
+
+	public function showlogin()
+	{
+      echo '<pre>';
+	  print_r($_POST);
+	  echo '</pre>';
+
+	}
 }

@@ -31,6 +31,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <a class="nav-link" href="<?php echo site_url('register');?>">Register</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="<?php echo site_url('register/login');?>">Login</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Pricing</a>
                         </li>
                         <li class="nav-item">
