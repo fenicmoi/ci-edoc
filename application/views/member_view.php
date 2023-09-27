@@ -11,6 +11,7 @@
                             <th>name</th>
                             <th>lname</th>
                             <th>datesave</th>
+                            <th>edit</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -20,6 +21,7 @@
                             <td><?php echo $rs->m_name;?></td>
                             <td><?php echo $rs->l_name;?></td>
                             <td><?php echo $rs->m_datesave;?></td>
+                            <td><a href="<?php echo site_url('insertdata/edit/').$rs->m_id;?>">edit</a></td>
                         </tr>
                         <?php }?>
                     </tbody>

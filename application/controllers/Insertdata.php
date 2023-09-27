@@ -12,12 +12,6 @@ class Insertdata extends CI_Controller {
 	public function index()
 	{
         $data['query']=$this->member_model->showdata();
-        /*
-        echo '<pre>';
-        print_r($data);
-        echo '</pre>';
-        exit;
-        */
 
         $this->load->view('css');
 		$this->load->view('header');
@@ -34,4 +28,16 @@ class Insertdata extends CI_Controller {
        $this->member_model->addmember();
 	
     }
+
+    public function edit($m_id)
+	{
+        $data['query']=$this->member_model->read($m_id);
+        $this->load->view('css');
+		$this->load->view('header');
+		$this->load->view('banner');
+		$this->load->view('navbar');
+		$this->load->view('edit_view',$data);
+		$this->load->view('footer');
+        $this->load->view('js');
+	}
 }
