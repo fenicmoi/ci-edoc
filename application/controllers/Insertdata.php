@@ -17,7 +17,7 @@ class Insertdata extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('banner');
 		$this->load->view('navbar');
-		$this->load->view('insert_view');
+		$this->load->view('insert_view2');
         $this->load->view('member_view', $data);
 		$this->load->view('footer');
         $this->load->view('js');
@@ -26,6 +26,12 @@ class Insertdata extends CI_Controller {
     public function adding()
 	{
        $this->member_model->addmember();
+	
+    }
+
+    public function adding2()
+	{
+       $this->member_model->addmember2();
 	
     }
 

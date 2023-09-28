@@ -19,9 +19,11 @@
                         <?php foreach($query as $rs){?>
                         <tr>
                             <td scope="row"><?php echo $rs->m_id;?></td>
+                            <td><img src="<?php echo base_url('img');?>/<?php echo $rs->m_img;?>" width="100px"></td>
                             <td><?php echo $rs->m_name;?></td>
                             <td><?php echo $rs->l_name;?></td>
                             <td><?php echo $rs->m_datesave;?></td>
+                           
                             <td><a href="<?php echo site_url('insertdata/edit/').$rs->m_id;?>">edit</a></td>
                             <td><a href="<?php echo site_url('insertdata/del/').$rs->m_id;?>"
                                   onclick="return confirm('ยืนยัน')">Del</a></td>
