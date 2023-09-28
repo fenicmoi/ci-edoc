@@ -26,19 +26,21 @@ class Insertdata extends CI_Controller {
     public function adding()
 	{
        $this->member_model->addmember();
+       
 	
     }
 
     public function adding2()
 	{
        $this->member_model->addmember2();
+       redirect('','refresh');
 	
     }
 
     public function editdata()
 	{
        $this->member_model->editmember();
-
+       redirect('','refresh');
     }
 
     public function del($m_id)

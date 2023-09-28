@@ -47,12 +47,13 @@ class Member_model extends CI_Model {
         }
 
        $query = $this->db->insert('tbl_member',$data);
-       
+       /*
        if ($query) {
         echo 'addok';
        }else{
         echo 'no ok';
        }
+       */
     }
 
     public function editmember()
@@ -66,12 +67,13 @@ class Member_model extends CI_Model {
        $this->db->where('m_id', $this->input->post('m_id')) ;
        $query = $this->db->update('tbl_member',$data);
        
-
+        /*
        if ($query) {
         echo 'edit ok';
        }else{
         echo 'false';
         }
+        */
     }
 
 
