@@ -40,6 +40,7 @@ class Member_model extends CI_Model {
         }
     }
 
+
     public function showdata()
         {
                 $query = $this->db->get('tbl_member');
@@ -57,6 +58,14 @@ class Member_model extends CI_Model {
                 return $data;
             }
             return FALSE;
+        }
+
+
+    
+
+    public function deldata($m_id)
+        {
+            $this->db->delete('tbl_member',array('m_id'=>$m_id));
         }
 
 }

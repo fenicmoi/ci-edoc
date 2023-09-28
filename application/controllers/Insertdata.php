@@ -35,6 +35,14 @@ class Insertdata extends CI_Controller {
 
     }
 
+    public function del($m_id)
+	{
+       
+        $this->member_model->deldata($m_id);
+        redirect('','refresh');
+
+    }
+
     public function edit($m_id)
 	{
         $data['rsedit']=$this->member_model->read($m_id);
