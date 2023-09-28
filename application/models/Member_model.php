@@ -19,8 +19,25 @@ class Member_model extends CI_Model {
        }else{
         echo 'no ok';
         }
+    }
 
- 
+    public function editmember()
+    {
+
+        $data = array(
+            'm_name'=> $this->input->post('m_name'),
+            'l_name' => $this->input->post('l_name')
+        );
+        
+       $this->db->where('m_id', $this->input->post('m_id')) ;
+       $query = $this->db->update('tbl_member',$data);
+       
+
+       if ($query) {
+        echo 'edit ok';
+       }else{
+        echo 'false';
+        }
     }
 
     public function showdata()

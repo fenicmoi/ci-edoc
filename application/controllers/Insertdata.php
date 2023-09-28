@@ -29,9 +29,15 @@ class Insertdata extends CI_Controller {
 	
     }
 
+    public function editdata()
+	{
+       $this->member_model->editmember();
+
+    }
+
     public function edit($m_id)
 	{
-        $data['query']=$this->member_model->read($m_id);
+        $data['rsedit']=$this->member_model->read($m_id);
         $this->load->view('css');
 		$this->load->view('header');
 		$this->load->view('banner');
