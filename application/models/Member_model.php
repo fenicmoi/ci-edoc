@@ -29,6 +29,7 @@ class Member_model extends CI_Model {
         $config['max_size'] = '2000';
         $config['max_width'] = '3000';
         $config['max_height'] = '3000';
+        $config['encrypt_name'] = TRUE;     //เข้ารหัสเพื่อตั้งชื่อภาพใหม่
 
         //checkerror
         $this->load->library('upload',$config);
