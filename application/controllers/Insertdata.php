@@ -63,3 +63,4 @@ class Insertdata extends CI_Controller {
         $this->load->view('js');
 	}
 }
+
