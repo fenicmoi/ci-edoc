@@ -83,6 +83,15 @@ class Member_model extends CI_Model {
             return $query->result();
     }
 
+    public function showdata2()
+    {
+        $this->db->select('m.*, p.*');      
+        $this->db->from('tbl_member as m');
+        $this->db->join('tbl_position as p','m.pid = p.pid');
+        $query = $this->db->get();
+        return $query->result();
+    }
+
     public function read($m_id)
     {
             $this->db->select('*');      
