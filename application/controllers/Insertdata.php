@@ -11,7 +11,7 @@ class Insertdata extends CI_Controller {
 
 	public function index()
 	{
-        $data['query']=$this->member_model->showdata2();
+        $data['query']=$this->member_model->showdata3();
 
         $this->load->view('css');
 		$this->load->view('header');
