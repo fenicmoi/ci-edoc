@@ -11,7 +11,12 @@ class Insertdata extends CI_Controller {
 
 	public function index()
 	{
-        $data['query']=$this->member_model->showdata3();
+        $data['query']=$this->member_model->showdata6();
+        /*
+        echo '<pre>';
+        print_r($data);
+        echo '</pre>';
+        */
 
         $this->load->view('css');
 		$this->load->view('header');
@@ -33,6 +38,7 @@ class Insertdata extends CI_Controller {
     public function adding2()
 	{
        $this->member_model->addmember2();
+
        redirect('','refresh');
 	
     }

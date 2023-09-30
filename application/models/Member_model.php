@@ -40,7 +40,7 @@ class Member_model extends CI_Model {
             $filename = $data['file_name'];
             $data = array(
                 'm_name'=> $this->input->post('m_name'),
-                'l_name' => $this->input->post('l_name'),
+                'm_lname' => $this->input->post('m_lname'),
                 'm_img' => $filename
             );
 
@@ -85,18 +85,49 @@ class Member_model extends CI_Model {
 
     public function showdata2()
     {
-        $this->db->select('m.*, p.*');      
-        $this->db->from('tbl_member as m');
+        $this->db->select('m.m_id, m.m_img, m.m_firstname, m_name, m.m_lname, m.m_datesave ,p.pname');      
+        $this->db->from('tbl_member2 as m');
         $this->db->join('tbl_position as p','m.pid = p.pid');
         $query = $this->db->get();
         return $query->result();
     }
+    
 
     public function showdata3()
     {
         $this->db->select('m.*, p.*');      
         $this->db->from('tbl_member as m');
         $this->db->join('tbl_position as p','m.pid = p.pid', 'left');
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    public function showdata4()
+    {
+        $this->db->select('m.m_id, m.m_img, m.m_firstname, m_name, m.m_lname, m.m_datesave ,p.pname, m.m_level');      
+        $this->db->from('tbl_member2 as m');
+        $this->db->join('tbl_position as p','m.pid = p.pid');
+        $this->db->where('m.m_level','S');
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    public function showdata5()
+    {
+        $this->db->select('m.m_id, m.m_img, m.m_firstname, m_name, m.m_lname, m.m_datesave ,p.pname, m.m_level');      
+        $this->db->from('tbl_member2 as m');
+        $this->db->join('tbl_position as p','m.pid = p.pid');
+        $this->db->where('m.pid','2');
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    public function showdata6()
+    {
+        $this->db->select('m.m_id, m.m_img, m.m_firstname, m_name, m.m_lname, m.m_datesave ,p.pname, m.m_level');      
+        $this->db->from('tbl_member2 as m');
+        $this->db->join('tbl_position as p','m.pid = p.pid');
+        $this->db->where_in('m.pid',array('1','2','3'));
         $query = $this->db->get();
         return $query->result();
     }

@@ -17,7 +17,7 @@
                     <div class="form-group row">
                         <div class="col-sm-2 control-label">lastname</div>
                         <div class="col-sm-5">
-                            <input type="text" name="l_name" class="form-control" required>
+                            <input type="text" name="m_lname" class="form-control" required>
                         </div>
                     </div>
                     <div class="form-group row">
