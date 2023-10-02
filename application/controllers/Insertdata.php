@@ -11,7 +11,7 @@ class Insertdata extends CI_Controller {
 
 	public function index()
 	{
-        $data['query']=$this->member_model->showdata6();
+        $data['query']=$this->member_model->showdata7();
         /*
         echo '<pre>';
         print_r($data);
