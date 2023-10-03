@@ -142,6 +142,16 @@ class Member_model extends CI_Model {
         return $query->result();
     }
 
+    public function showdata8()
+    {
+        $this->db->select('m.m_id, m.m_img, m.m_firstname, m_name, m.m_lname, m.m_datesave ,p.pname, m.m_level');      
+        $this->db->from('tbl_member2 as m');
+        $this->db->join('tbl_position as p','m.pid = p.pid');
+        $this->db->order_by('m.pid','desc');
+        $query = $this->db->get();
+        return $query->result();
+    }
+
     public function read($m_id)
     {
             $this->db->select('*');      
