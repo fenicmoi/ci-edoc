@@ -5,7 +5,7 @@
     </a>
   </li>
   <li>
-    <a href="<?php echo site_url('admin/form_add?p=add');?>"><i class="fa fa-inbox"></i>
+    <a href="<?php echo site_url('admin/newdata');?>"><i class="fa fa-inbox"></i>
       <span>Form ADD</span>
     </a>
   </li> 

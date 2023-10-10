@@ -1,3 +1,4 @@
+<body>
 <form action="" method="POST"   name="add" class="form-horizontal" id="add">
   <div class="form-group">
     <div class="col-sm-2" align="right"></div>
@@ -66,3 +67,4 @@
     </div>
   </div>
 </form>
+</body>
