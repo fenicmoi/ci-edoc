@@ -25,4 +25,5 @@
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
+<body class="hold-transition skin-blue sidebar-mini"">
 

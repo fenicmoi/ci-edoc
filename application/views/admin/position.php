@@ -1,4 +1,4 @@
-
+a
 
   <div class="wrapper">
     <!-- Main Header -->
@@ -25,22 +25,37 @@
     <div class="content-wrapper">
       <section class="content-header">
         <h1>
-        ::จัดการตำแหน่ง ::
-        
+        ::ตำแหน่งงาน ::
         </h1>
       </section>
       <section class="content">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12"> 
             <div class="box">
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="box-body">
-                   <?php include('list.php');?>
-                  </div>
+              <div class="box-header">
+                <h3 class="box-title">ตารางข้อมูล</h3>
+              </div>
+              <div class="box-body">
+                <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                    <div class="row">
+                        <div class="col-sm-6">
+                         <a class="btn btn-success"   href="<?php echo site_url('admin/adding');?>">เพิ่มข้อมูล </a>
+                         <a class="btn btn-primary"   href="<?php echo site_url('admin/adding');?>">Refresh </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <?php include('list.php');?>
+                        </div>
+                    </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+    </div>
+  </div>
+
+
+
